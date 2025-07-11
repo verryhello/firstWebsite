@@ -13,3 +13,14 @@ ham.addEventListener("click", function () {
     icon.classList.add("fa-times");
   }
 });
+function showHouseInfo(house) {
+  const info = {
+    Gryffindor:
+      "Gryfindor terkenal dengan keberanian, tekad, dan semangat juang",
+    Ravenclaw:
+      "Ravenclaw menghargai kebijaksanaan, kreatifitas, dan kecerdasan",
+    Hufflepuf: "Hufflepuf mennjunjung kesetiaan, keadilan, dan kerja keras",
+    Slytherin: "Slytherin dikenal dengan ambisi, kepemimpinan, dan kecerdikan",
+  };
+  document.getElementById("house-info").textContent = info[house];
+}
